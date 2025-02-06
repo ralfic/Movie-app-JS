@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/nullstyle.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="shortcut icon" href="img/clapperboard.png" type="image/x-icon" />
+    <title>Movie app</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="menu">
+        <a href="/index.html" class="menu__link"
+          ><div class="animated">
+            <div class="let">M</div>
+            <div class="let">v</div>
+            <div class="let">i</div>
+            <div class="let">e</div>
+            <div class="let let--color">A</div>
+            <div class="let let--color">P</div>
+            <div class="let let--color">P</div>
+          </div></a
+        >
+        <form>
+          <input type="text" class="menu__search" placeholder="Search" />
+          <button type="button" class="menu__search-btn"></button>
+        </form>
+      </nav>
+    </header>
+    <section class="movies">
+      <div class="filter-bar">
+        <div class="filter-bar__link" data-value="NowPlaying">Now Playing</div>
+        <div
+          class="filter-bar__link filter-bar__link--active"
+          data-value="Popular"
+        >
+          Popular
+        </div>
+        <div class="filter-bar__link" data-value="TopRated">Top Rated</div>
+        <div class="filter-bar__link" data-value="Upcoming">Upcoming</div>
+      </div>
+      <ul class="paginator-menu"></ul>
+      <div class="container">
+        <div class="side-filter-bar">
+          <h1 class="side-filter-bar__title">Ganers</h1>
+          <div class="side-filter-bar__wrapper"></div>
+        </div>
+        <div class="movies__wrapper"></div>
+      </div>
+    </section>
+    <script src="JS/app.js"></script>
+  </body>
+</html>
